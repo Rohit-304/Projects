@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .6s ease;
+    background-color: white;
+    z-index: 10000;
+}
+#navbar.sticky{
+    padding:5px 10px ;
+    background-color: #000;
+}
+.logo img{
+    height: 100px;
+    width: 350px;
+}
+.nav-links{
+    padding-top: 5px;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    
+}
+#navbar ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding:10px 35px;
+}
+#navbar ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #f1683a;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+#navbar ul li a:hover{
+    color: #1591de;
+}
+#navbar ul li a:hover:after{
+    width: 50%;
+    left: 35px;
+}
+#navbar .fa-solid{
+    display: none;
+}
+#sidemenu {
+    display: block;
+}
+#products,#commercial,#vacuum-cleaners{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 200px;
+}
+.product-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 150px;
+    width: 300px;
+    margin-right:58vw;
+}
+.container{
+    width: 280px;
+    height: 300px;
+}
+.card{
+    height: 100%;
+    padding: 5px;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.front,.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    backface-visibility: hidden;
+}
+.front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.front h4{
+    margin: 10px 20px;
+}
+.front img{
+    height: 210px;
+    width: 200px;
+    padding: 5px;;
+}
+.back{
+    background-color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.back p{
+    padding: 20px;
+}
+.back button{
+    border:2px solid rgb(3, 81, 169);
+    border-radius: 30px;
+    background-color: transparent;
+    color: rgb(19,98,197);
+    font-size: medium;
+    text-align: center;
+    font-weight: bolder;
+    height: 40px;
+    width: 150px;
+    margin-top: 30px;
+}
+.back a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #0c0b0b;
+}
+.container:hover > .card{
+    cursor:pointer;
+    transform: rotateY(180deg);
+    z-index: 2;
+}
+#contact{
+    position: absolute;
+    padding: 50px;
+    background-color: #a7e0f1;
+    display: flex;   
+    height: 130vh;
+    width: 100%;
+    background-image:url('https://aradhanawaterpurifier.com/wp-content/uploads/2021/11/3334703.png');
+}
+.contact-right h2{
+    font-size: 40px;
+    line-height: 30px;
+    color: #0c0b0b;
+    margin-right: 100px;
+}
+.contact-right{
+    padding: 50px;
+    display: flex;
+    gap:40px;
+    height: 105vh;
+    margin-left: 200px;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right,transparent,#a7e0f1);
+}
+.contact-right select{
+    padding: 10px;
+    border-style: none;
+}
+form{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 2fr;
+    gap: 50px;
+}
+.form-group{
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+input,textarea{
+    padding: .75rem 1rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5%;
+    color: black;
+    border: 1px solid #ccc;
+}
+input:focus,textarea:focus{
+    border-color: rgb(1, 230, 230);
+    box-shadow: 0 0 0 .25rem rgb(192, 239, 234);
+}
+label{
+    margin-bottom: 0.25rem;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bolder;
+}
+select label{
+    margin-bottom: 0.25rem;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bolder;
+}
+.btn-submit{
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    color: black;
+    font-size: 2em;
+    line-height: 12px;
+    border: none;
+    outline: none;
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 25vw;
+}
+
+#footer{
+    position: absolute;
+    margin-top: 130vh;
+    padding-top: 10vh;;
+    display: flex;
+    width: 100%;
+    padding-left: 40px;
+    gap: 180px;
+    height: 35vh;
+    background-color: #f5f6f8;
+}
+.footer-social{
+    width: 300px;
+}
+#footer ul{
+    list-style: none;
+}
+#footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer-links,.footer-links ul,.footer-products,.footer-products ul,.footer-address,.footer-address ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    white-space: nowrap;
+}
+#footer img{
+    height: 38px;
+    width: 38px;
+}
+#footer .footer-social{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#footer .socials ul{
+    display: flex;
+    gap:40px
+}
+#footer .footer-address img{
+    height: 18px;
+    width: 18px;
+    margin: 0px 3px;
+}
+#footer .socials li:hover{
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width: 480px){
+    #navbar {
+        display: flex;
+        align-items: center;
+        gap:80px;
+        justify-content: space-around;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: .6s ease;
+        background-color: white;
+        z-index: 10000;
+    }
+    #navbar.sticky{
+        padding:5px 10px ;
+        background-color: #000;
+    }
+    #navbar .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    #navbar ul li{
+        display: block;
+        margin:65px 0px;
+    }
+    #navbar ul .fa-solid{
+        position:absolute;
+        top: 25px;
+        left: 75px;
+        cursor: pointer;
+    }
+    .logo img{
+        height: 100px;
+        width: 250px;
+    }
+    .nav-links{
+        padding-top: 5px;
+    }
+    #navbar ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width:170px;
+        height: 60vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    #navbar ul li a{
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding:10px 0px;
+    }
+    #navbar ul li a:after{
+        content: "";
+        position: absolute;
+        background-color: #f1683a;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+    #navbar ul li a:hover{
+        color: #de1555;
+    }
+    #navbar ul li a:hover:after{
+        width: 70%;
+        left: 10px;
+    }
+    h1{
+        margin-right: 50px;
+    }
+    #commercial h1{
+        font-size: 28px;
+    }
+    #products,#commercial,#vacuum-cleaners{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        margin-bottom: 200px;
+    }
+    .product-list{
+        display: flex;
+        flex-direction: column;
+        margin-left: 180px;
+        gap: 150px;
+        width: 300px;
+    }
+    .container{
+        width: 280px;
+        height: 300px;
+    }
+    .card{
+        height: 100%;
+        padding: 5px;
+        width: 100%;
+        position: relative;
+        transition: transform 1500ms;
+        transform-style: preserve-3d;
+    }
+    .front,.back{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+        backface-visibility: hidden;
+    }
+    .front{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .front h4{
+        margin: 10px 20px;
+    }
+    .front img{
+        height: 210px;
+        width: 200px;
+        padding: 5px;;
+    }
+    .back{
+        background-color: white;
+        transform: rotateY(180deg);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .back p{
+        padding: 20px;
+    }
+    .back button{
+        border:2px solid rgb(3, 81, 169);
+        border-radius: 30px;
+        background-color: transparent;
+        color: rgb(19,98,197);
+        font-size: medium;
+        text-align: center;
+        font-weight: bolder;
+        height: 40px;
+        width: 150px;
+        margin-top: 30px;
+    }
+    .back a{
+        text-decoration: none;
+        font-size: 20px;
+        color: #0c0b0b;
+    }
+    .container:hover > .card{
+        cursor:pointer;
+        transform: rotateY(180deg);
+        z-index: 2;
+    }
+    #contact{
+        background-color: #d8edf3;
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+        height: 200vh;
+        width: 100%;
+        background-image:url('https://aradhanawaterpurifier.com/wp-content/uploads/2021/11/3334703.png');
+    }
+    .contact-right h2{
+        font-size: 36px;
+        line-height: 30px;
+        color: #0c0b0b;
+        margin-right: 70vw;
+        white-space: nowrap;
+    }
+    .contact-right{
+        display: flex;
+        height: 105vh;
+        width: 43vw;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contact-right select{
+        padding: 10px;
+        border-style: none;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-right: 70vw;
+    }
+    .form-group{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
+    input,textarea{
+        padding: .75rem 1rem;
+        font-size: 1rem;
+        outline: none;
+        border-radius: 5%;
+        color: black;
+        border: 1px solid #ccc;
+    }
+    input:focus,textarea:focus{
+        border-color: rgb(1, 230, 230);
+        box-shadow: 0 0 0 .25rem rgb(192, 239, 234);
+    }
+    label{
+        margin-bottom: 0.25rem;
+        display: inline-block;
+        font-size: medium;
+        font-weight: bolder;
+    }
+    select label{
+        margin-bottom: 0.25rem;
+        display: inline-block;
+        font-size: medium;
+        font-weight: bolder;
+    }
+    .btn-submit{
+        padding: 1rem 2rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+        color: black;
+        font-size: 2em;
+        line-height: 12px;
+        border: none;
+        outline: none;
+        margin-right: 28vw;
+        margin-top: 145vh;
+    }
+
+    #footer{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        gap: 100px;
+        height: 130vh;
+        margin-top: 200vh;
+        background-color: #f5f6f8;
+    }
+    .footer-social{
+        width: 300px;
+    }
+    #footer ul{
+        list-style: none;
+    }
+    #footer a{
+        text-decoration: none;
+        color: black;
+    }
+    #footer h3{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .footer-links,.footer-links ul,.footer-products,.footer-products ul,.footer-address,.footer-address ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        white-space: nowrap;
+    }
+    #footer img{
+        height: 38px;
+        width: 38px;
+    }
+    #footer .footer-social{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    #footer .socials ul{
+        display: flex;
+        gap:40px
+    }
+    #footer .socials li:hover{
+        transform: scale(1.1);
+    
+    }
+    #footer .footer-address img{
+        height: 18px;
+        width: 18px;
+        margin: 0px 3px;
+    }
+    #feedback{
+        height: 120vh;
+        width: 100vh;
+        display: flex;
+        gap: 100px;
+        margin-top: 80px;
+    }
+}

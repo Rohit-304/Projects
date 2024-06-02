@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payal Enterprises</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter&family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&family=Space+Grotesk&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+</head>
+<body>
+<div id="navbar">
+    <div class="logo">
+        <a href="#"><img class="logo" src="./images/logo2.png"></a>
+    </div>
+    <div class="nav-links">
+        <ul id = "sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="./product.html">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </div>
+</div>
+<div class="carousel">  
+    <div class="list">
+        <div class="item">
+            <img src="https://www.eurekaforbes.com/media/catalog/product//b/l/blaze-desk_1.jpg">
+            <div class="content">
+                <div class="author">Aquaguard</div>
+                <div class="title">BLAZE RO+SS+HOT</div>
+                <div class="topic">PURIFIER</div>
+                <div class="des">
+                    Dispenses hot and ambient purified water with the additional protection of stainless steel tank that keeps your water corrosion-free.
+                </div>
+                <div class="buttons">
+                    <button onclick="document.getElementById('contact').scrollIntoView()">CONTACT NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://www.eurekaforbes.com/media/wysiwyg/lvac/laser.png">
+            <div class="content">
+                <div class="author">FORBES</div>
+                <div class="title">LVAC VOICE </div>
+                <div class="topic">VACUUM CLEANER</div>
+                <div class="des">
+                    Robo LVac Voice is a fully automated and convenient Vacuum Cleaner which cleans the house in the smartest way with minimum interface.
+                </div>
+                <div class="buttons">
+                    <button onclick="document.getElementById('contact').scrollIntoView()">CONTACT NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://www.eurekaforbes.com/media/wysiwyg/Aura_RO_UV_UF_MTDS_Desktop_Banner_1.png">
+            <div class="content">
+                <div class="author">Aquaguard</div>
+                <div class="title">AURA RO+UV+UF+MTDS</div>
+                <div class="topic">PURIFIER</div>
+                <div class="des">
+                    Comes with superior design and advanced purification of RO, UV and UF that ensures you get clean and pure drinking water with goodness of copper and zinc.
+                </div>
+                <div class="buttons">
+                    <button onclick="document.getElementById('contact').scrollIntoView()">CONTACT NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://www.eurekaforbes.com/media/catalog/product//c/l/classic-hot-desktop.jpg">
+            <div class="content">
+                <div class="author">Aquaguard</div>
+                <div class="title">SELECT CLASSIC + HOT</div>
+                <div class="topic">PURIFIER</div>
+                <div class="des">
+                    Get water at desired temperature along with purity of UV E-Boiling+ and goodness of copper, zinc and other essential minerals.
+                </div>
+                <div class="buttons">
+                    <button onclick="document.getElementById('contact').scrollIntoView()">CONTACT NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="thumbnail">
+        <div class="item">
+            <img src="https://www.eurekaforbes.com/media/catalog/product//b/l/blaze-desk_1.jpg">
+            <div class="content">
+                <div class="title">
+                    BLAZE
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://www.eurekaforbes.com/media/wysiwyg/lvac/laser.png">
+            <div class="content">
+                <div class="title">
+                    LVAC VOICE
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://www.eurekaforbes.com/media/wysiwyg/Aura_RO_UV_UF_MTDS_Desktop_Banner_1.png">
+            <div class="content">
+                <div class="title">
+                    AURA 
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://www.eurekaforbes.com/media/catalog/product//c/l/classic-hot-desktop.jpg">
+            <div class="content">
+                <div class="title">
+                    SELECT CLASSIC 
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+    <div class="time"></div>
+</div>
+<div id="service">
+    <div class="content-service">
+        <h1 id = 'content-heading'>Featured Services</h1>
+        <h1 id = 'content-headings'>Featured Services</h1>
+    </div>
+    <div class="service-list">
+        <div class="service-list1">
+            <img src="./images/Maintenance.png" alt="">
+            <h3>AMC</h3>
+            <p>We distinguish ourselves through the meticulous maintenance of water purifiers, assuring not only a secure system but also a seamlessly efficient operation.</p>
+            <button onclick="document.getElementById('contact').scrollIntoView()">Enquiry Now</button>
+        </div>
+        <div class="service-list2">
+            <img src="./images/Installation.png" alt="">
+            <h3>Installation</h3>
+            <p>Our factory-trained technicians are dedicated to ensuring the flawless installation of water purifiers, guaranteeing effectiveness and precision in every step.</p>
+            <button onclick="document.getElementById('contact').scrollIntoView()">Enquiry Now</button>
+        </div>
+        <div class="service-list3">
+            <img src="./images/Repairing.png" alt="">
+            <h3>Repairation</h3>
+            <p>As seasoned experts in water purifier repairs, we pride ourselves on delivering hassle-free excellence with a commitment to meticulous service.</p>
+            <button onclick="document.getElementById('contact').scrollIntoView()">Enquiry Now</button>
+           
+        </div>
+        <div class="service-list4">
+            <img src="./images/Exchange.png" alt="">
+            <h3>Exchange</h3>
+            <p>We offer the most enticing exchange deals on our premium water purifiers from leading brands, ensuring you get the highest quality at the best possible prices.</p>
+            <button onclick="document.getElementById('contact').scrollIntoView()" >Enquiry Now</button>
+        </div>
+    </div>
+</div>
+<div id="feedback">
+    <div class="headings">
+        <h1>Why Choose Us?</h1>
+    </div>
+    <div class="choose">
+        <div class="drop" style="--clr:#ff0f5b;" >
+            <div class="drop-content">
+                <h2>1</h2>
+                <p>We provide a cost-effective price for water purifier service with our trained technician with the latest technology which will save your time.</p>
+            </div>
+        </div>
+        <div class="drop" style="--clr:#be01fe;" >
+            <div class="drop-content">
+                <h2>2</h2>
+                <p>Our Ro water purifiers are made with advanced machinery and cut-edge resources to make the water safe and healthy for drinking.</p>
+            </div>
+        </div>
+        <div class="drop" style="--clr:#01b4ff;" >
+            <div class="drop-content">
+                <h2>3</h2>
+                <p>Our water purifiers are the best example of innovation that not only remove harmful pollutants but also improves the taste and odour of the water.</p>
+            </div>
+        </div>
+    </div>
+    <div class="counter-up">
+        <div class="counter-content">
+          <div class="box">
+            <div class="icon"><i class="fas fa-history"></i></div>
+            <div class="counter">72</div>
+            <div class="text">Completed Installation</div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-gift"></i></div>
+            <div class="counter">58</div>
+            <div class="text">Completed Deliveries</div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <div class="counter">107</div>
+            <div class="text">Happy Clients</div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-award"></i></div>
+            <div class="counter">12</div>
+            <div class="text">Active Employees</div>
+          </div>
+        </div>
+      </div>
+</div>
+<div id="contact"> 
+    <div class="contact-right">
+        <h2>Contact Us</h2>
+        <form method="post" action = "https://script.google.com/macros/s/AKfycbyBi6220vbFPWxmEDiA-BZrIuhZukHmCUyTIjGF237lWlunMBvHY-lV0kQPES4N4Lf5hw/exec" name = "contact-us">
+            <div class="form-group">
+                <label for = "Name">First Name</label>
+                <input type="text" name = "Name" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for = "Last Name">Last Name</label>
+                <input type="text" name = "Last Name" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label for = "Mobile No">Mobile No</label>
+                <input type="text" name = "Mobile No" placeholder="Number">
+            </div>
+            
+            <div class="form-group">
+                <label for = "Email">Email</label>
+                <input type="Email" name = "Email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for = "Services">Services</label>
+                <select name = "Services">
+                    <option value="None">None</option>
+                    <option value="AMC">AMC</option>
+                    <option value="Installation">Installation</option>
+                    <option value="Repairing">Repairing</option>
+                    <option value="Exchange">Exchange</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for = "Products">Products</label>
+                <select name = "Products">
+                    <option value="None">None</option>
+                    <option value="Aquaguard Nova RO+UV+MTDS Water Purifier">Aquaguard Nova RO+UV+MTDS Water Purifier</option>
+                    <option value="Aquaguard Blaze RO+SS+HOT Water Purifier">Aquaguard Blaze RO+SS+HOT Water Purifier</option>
+                    <option value="Aquaguard Eden RO+UV+MTDS+SS Water Purifier">Aquaguard Eden RO+UV+MTDS+SS Water Purifier</option>
+                    <option value="Aquaguard Select Classic+ Water Purifier">Aquaguard Select Classic+ Water Purifier</option>
+                    <option value="Aquaguard Select Nrich UV+RO On Demand Water Purifier">Aquaguard Select Nrich UV+RO On Demand Water Purifier</option>
+                    <option value="Aquaguard 200 Commercial Water Purifier">Aquaguard 200 Commercial Water Purifier</option>
+                    <option value="AG Pure chill 80 SS UV Commercial Water Purifier">AG Pure chill 80 SS UV Commercial Water Purifier</option>
+                    <option value=" Forbes Select WD X2 Vacuum Cleaner"> Forbes Select WD X2 Vacuum Cleaner</option>
+                    <option value="Euroclean iClean Vacuum Cleaner">Euroclean iClean Vacuum Cleaner</option>
+                    <option value="Forbes Robotic LVac Voice Pro Vacuum">Forbes Robotic LVac Voice Pro Vacuum</option>
+                    <option value="Aquaguard Slim Tech UV Bar Inline Water Purifier">Aquaguard Slim Tech UV Bar Inline Water Purifier</option>
+                    <option value="Aquaguard Geneus Water Purifier">Aquaguard Geneus Water Purifier</option>
+                    <option value="Aquaguard Enhance UV + UF Water Purifier">Aquaguard Enhance UV + UF Water Purifier</option>
+                    <option value="Aquaguard Marvel NXT RO+UV+UF Water Purifiers Water Purifier">Aquaguard Marvel NXT RO+UV+UF Water Purifiers Water Purifier</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for = "Address">Address</label>
+                <textarea name="address" rows="5" placeholder="Your Address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for = "message">Message</label>
+                <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+        
+    </div>
+
+</div>    
+<div id="about">
+    <div class="about-left">
+        <img src="./images/about-bg.jpeg">
+    </div>
+    <div class="about-right">
+        <h4>Who we Are</h4>
+        <h2>About Us</h2>
+        <p>We, Payal Enterprise, located at Sudarpada Bhubaneswar, Odisha, are focused on providing the best water purifier services to our customers. We are the right platform for you to come and get all types of services for water purifiers. Customer satisfaction is our first priority which keeps us at the top in this category. We maintain the highest standard of quality services to avoid any contamination. We have an experienced and skilled technical team specialized in all brands of water purifier installation, service & repairs with the exchange offer. Contact us today !</p>
+    </div>
+</div>
+<div id="footer">
+    <div class="footer-social">
+        <p>We are the right platform for you to come and get all types of services for water purifiers. Customer satisfaction is our first priority which keeps us at the top in this category.</p>
+        <div class="socials">
+            <ul>
+                <li><a><img src="./images/twitter.svg" /></a></li>
+                <li><a><img src="./images/instagram.svg" /></a></li>
+                <li><a><img src="./images/facebook.svg" /></a></li>
+                <li><a><img src="./images/linkedin.svg" /></a></li>    
+            </ul>
+        </div>
+    </div>
+    <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="footer-products">
+        <h3>Products</h3>
+        <ul>
+            <li><a href="product.html">Aquaguards</a></li>
+            <li><a href="product.html#commercial">Commercial Aquaguards</a></li>
+            <li><a href="product.html#vacuum-cleaners">Vacuum Cleaners</a></li>
+        </ul>
+    </div>
+    <div class="footer-address">
+        <h3>Visit Us</h3>
+        <ul>
+            <li><img src="./images/location.svg"> Sundarapada Bhubaneswar</li>
+            <li><img src="./images/mail.svg">payalenterprise2015@gmail.com</li>
+            <li><img src="./images/link.svg">info@url</li>
+            <li><img src="./images/contact.svg">9438200949</li>
+        </ul>
+    </div>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBi6220vbFPWxmEDiA-BZrIuhZukHmCUyTIjGF237lWlunMBvHY-lV0kQPES4N4Lf5hw/exec'
+    const form = document.forms['contact-us']
+    
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+        form.reset()
+        console.log('Success!', response)
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>    
+    <script>
+        $(document).ready(function(){
+        $('.counter').counterUp({
+        delay: 10,
+        time: 1200
+        });
+    });
+    </script>
+    <script src = "index.js"></script>
+    <script src="https://kit.fontawesome.com/a52bd45550.js" crossorigin="anonymous"></script>
+</body>
+</html>
