@@ -1,4 +1,4 @@
-Here’s a more professional version of the text for your README file:
+Here’s a README file for the project:
 
 ---
 
@@ -16,7 +16,7 @@ These modules are integral to the functionality and user experience of the 2048 
 
 ---
 
-This version is concise, professional, and suitable for a README file in a GitHub repository.
+
 
 
 ![Screenshot 2024-09-19 210849](https://github.com/user-attachments/assets/9d9f8fa0-ab2a-44c8-ac3c-64ee2ed436f0)
