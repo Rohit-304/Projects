@@ -14,3 +14,7 @@ Here’s a brief summary of the modules used in the code:
 
 tkinter: Used for creating the GUI components and handling user input.
 random: Used for generating random numbers for adding new tiles in the game.
+
+
+![Screenshot 2024-09-19 210849](https://github.com/user-attachments/assets/9d9f8fa0-ab2a-44c8-ac3c-64ee2ed436f0)
+
